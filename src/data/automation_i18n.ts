@@ -139,7 +139,7 @@ const tryDescribeTrigger = (
     );
   }
 
-  // Home Assistant Trigger
+  // AutoHome Trigger
   if (trigger.trigger === "homeassistant" && trigger.event) {
     return hass.localize(
       trigger.event === "start"

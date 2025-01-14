@@ -53,9 +53,9 @@ declare global {
 }
 
 const SUPERVISOR_UPDATE_NAMES = {
-  core: "Home Assistant Core",
-  os: "Home Assistant Operating System",
-  supervisor: "Home Assistant Supervisor",
+  core: "AutoHome Core",
+  os: "AutoHome Operating System",
+  supervisor: "AutoHome Supervisor",
 };
 
 type updateType = "os" | "supervisor" | "core" | "addon";

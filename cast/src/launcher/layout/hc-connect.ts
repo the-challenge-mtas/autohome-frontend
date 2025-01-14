@@ -37,17 +37,17 @@ const translateErr = (err) =>
   err === ERR_CANNOT_CONNECT
     ? "Unable to connect"
     : err === ERR_HASS_HOST_REQUIRED
-      ? "Please enter a Home Assistant URL."
+      ? "Please enter a AutoHome URL."
       : err === ERR_INVALID_HTTPS_TO_HTTP
         ? html`
-            Cannot connect to Home Assistant instances over "http://".
+            Cannot connect to AutoHome instances over "http://".
             ${seeFAQ("https")}
           `
         : `Unknown error (${err}).`;
 
 const INTRO = html`
   <p>
-    Home Assistant Cast allows you to cast your Home Assistant installation to
+    AutoHome Cast allows you to cast your AutoHome installation to
     Chromecast video devices and to Google Assistant devices with a screen.
   </p>
   <p>
@@ -117,11 +117,11 @@ export class HcConnect extends LitElement {
           <div class="card-content">
             ${INTRO}
             <p>
-              To get started, enter your Home Assistant URL and click authorize.
+              To get started, enter your AutoHome URL and click authorize.
               If you want a preview instead, click the show demo button.
             </p>
             <ha-textfield
-              label="Home Assistant URL"
+              label="AutoHome URL"
               placeholder="https://abcdefghijklmnop.ui.nabu.casa"
               @keydown=${this._handleInputKeyDown}
             ></ha-textfield>
@@ -203,7 +203,7 @@ export class HcConnect extends LitElement {
     this.error = undefined;
 
     if (value === "") {
-      this.error = "Please enter a Home Assistant URL.";
+      this.error = "Please enter a AutoHome URL.";
       return;
     }
     if (value.indexOf("://") === -1) {

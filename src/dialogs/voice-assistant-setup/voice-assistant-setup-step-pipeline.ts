@@ -91,7 +91,7 @@ export class HaVoiceAssistantSetupStepPipeline extends LitElement {
             ? html`<div class="timing hass">0.4 seconds</div>`
             : nothing}
         </div>
-        <h2>Home Assistant Cloud</h2>
+        <h2>AutoHome Cloud</h2>
         <p>Ideal if you don't have a powerful system at home.</p>
         <ha-button @click=${this._setupCloud}>Learn more</ha-button>
       </div>
@@ -210,7 +210,7 @@ export class HaVoiceAssistantSetupStepPipeline extends LitElement {
         )
       ).providers.find((provider) => provider.engine_id === cloudSttEntityId);
 
-      let pipelineName = "Home Assistant Cloud";
+      let pipelineName = "AutoHome Cloud";
       let i = 1;
       while (
         pipelines.pipelines.find(

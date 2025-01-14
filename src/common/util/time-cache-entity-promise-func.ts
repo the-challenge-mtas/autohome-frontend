@@ -9,7 +9,7 @@ interface ResultCache<T> {
  * @param cacheKey key to store the cache on hass object
  * @param cacheTime time to cache the results
  * @param func function to fetch the data
- * @param hass Home Assistant object
+ * @param hass AutoHome object
  * @param entityId entity to fetch data for
  * @param args extra arguments to pass to the function to fetch the data
  * @returns

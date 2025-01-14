@@ -52,9 +52,9 @@ export class DialogJoinBeta
           ${this.hass.localize("ui.dialogs.join_beta_channel.release_items")}
         </p>
         <ul>
-          <li>Home Assistant Core</li>
-          <li>Home Assistant Supervisor</li>
-          <li>Home Assistant Operating System</li>
+          <li>AutoHome Core</li>
+          <li>AutoHome Supervisor</li>
+          <li>AutoHome Operating System</li>
         </ul>
         <a
           href=${documentationUrl(this.hass!, "/faq/release/")}

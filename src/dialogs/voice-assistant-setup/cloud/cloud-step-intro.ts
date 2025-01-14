@@ -18,7 +18,7 @@ export class CloudStepIntro extends LitElement {
           src=${`/static/images/logo_nabu_casa${this.hass.themes?.darkMode ? "_dark" : ""}.png`}
           alt="Nabu Casa logo"
         />
-        <h1>The power of Home Assistant Cloud</h1>
+        <h1>The power of AutoHome Cloud</h1>
         <div class="features">
           <div class="feature speech">
             <div class="logos">
@@ -50,7 +50,7 @@ export class CloudStepIntro extends LitElement {
             </h2>
             <p>
               Secure remote access to your system while supporting the
-              development of Home Assistant.
+              development of AutoHome.
             </p>
           </div>
           <div class="feature">

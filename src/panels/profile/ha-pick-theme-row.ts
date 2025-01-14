@@ -72,7 +72,7 @@ export class HaPickThemeRow extends LitElement {
             ${this.hass.localize("ui.panel.profile.themes.use_default")}
           </mwc-list-item>
           <mwc-list-item .value=${HOME_ASSISTANT_THEME}>
-            Home Assistant
+            AutoHome
           </mwc-list-item>
           ${this._themeNames.map(
             (theme) => html`

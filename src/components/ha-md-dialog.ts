@@ -45,7 +45,7 @@ MdDialog.addInitializer(async (instance) => {
 let DIALOG_POLYFILL: Promise<typeof import("dialog-polyfill")>;
 
 /**
- * Based on the home assistant design: https://design.home-assistant.io/#components/ha-dialogs
+ * Based on the AutoHome design: https://design.home-assistant.io/#components/ha-dialogs
  *
  */
 @customElement("ha-md-dialog")

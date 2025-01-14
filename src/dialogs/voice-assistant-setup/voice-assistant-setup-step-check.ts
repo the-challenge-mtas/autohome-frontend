@@ -37,11 +37,11 @@ export class HaVoiceAssistantSetupStepCheck extends LitElement {
     return html`<div class="content">
       ${this._status === "timeout"
         ? html`<img src="/static/images/voice-assistant/error.png" />
-            <h1>The voice assistant is unable to connect to Home Assistant</h1>
+            <h1>The voice assistant is unable to connect to AutoHome</h1>
             <p class="secondary">
               To play audio, the voice assistant device has to connect to Home
               Assistant to fetch the files. Our test shows that the device is
-              unable to reach the Home Assistant server.
+              unable to reach the AutoHome server.
             </p>
             <div class="footer">
               <a
